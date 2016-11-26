@@ -22,7 +22,7 @@
      * Remove two blocks according direction
      * @param item1 {string} suffix for first block's class
      * @param item2 {string} suffix for second block's class
-     * @param direction {string} direction of moving
+     * @param direction {string} direction of removing
      */
     function remove(item1, item2, direction) {
         document.querySelector('.slider__item--' + item1).classList.remove('move-' + direction + '-out');
