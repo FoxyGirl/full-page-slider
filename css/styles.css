@@ -79,18 +79,18 @@ body {
 }
 .slider__item--3 {
   top: 0;
-  left: 100%;
+  left: -100%;
   background-image: url("../img/visage_img/visage_page_3.png");
 }
 .slider__item--4 {
   top: 0;
-  left: -100%;
-  background-image: url("../img/visage_img/visage_page_4.png");
+  left: 100%;
+  background-image: url("../img/visage_img/visage_page_5.png");
 }
 .slider__item--5 {
   top: 100%;
   left: 0;
-  background-image: url("../img/visage_img/visage_page_5.png");
+  background-image: url("../img/visage_img/visage_page_4.png");
 }
 .slider__link {
   display: block;

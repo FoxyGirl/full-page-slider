@@ -44,28 +44,28 @@
     link_2.addEventListener('click', function (e) {
         console.log(this);
         e.preventDefault();
-        move('2', '3', 'left');
+        move('2', '3', 'right');
     });
 
     link_5.addEventListener('click', function (e) {
         console.log(this);
         e.preventDefault();
-        remove('2', '3', 'left');
+        remove('2', '3', 'right');
     });
 
-    link_3.addEventListener('click', function (e) {
+    link_4.addEventListener('click', function (e) {
         console.log(this);
         e.preventDefault();
-        move('2', '4', 'right');
+        move('2', '4', 'left');
     });
 
     link_6.addEventListener('click', function (e) {
         console.log(this);
         e.preventDefault();
-        remove('2', '4', 'right');
+        remove('2', '4', 'left');
     });
 
-    link_4.addEventListener('click', function (e) {
+    link_3.addEventListener('click', function (e) {
         console.log(this);
         e.preventDefault();
         document.querySelector('.slider__item--2').classList.remove('move-top');
