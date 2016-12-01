@@ -1,0 +1,7 @@
+Формат:
+--- RECORDSEPARATOR ---
+ JPEG, BMP, PDF
+--- RECORDSEPARATOR ---
+Размер: 
+--- RECORDSEPARATOR ---
+1920px x 1080px  100ppi

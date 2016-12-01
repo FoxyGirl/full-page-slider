@@ -1,0 +1,15 @@
+Формат: 
+--- RECORDSEPARATOR ---
+MP4 (кодек h.264) max 30fps          
+--- RECORDSEPARATOR ---
+Хронометраж: 
+--- RECORDSEPARATOR ---
+8 секунд
+--- RECORDSEPARATOR ---
+Размер: 
+--- RECORDSEPARATOR ---
+1920px x 1080px                                   
+--- RECORDSEPARATOR ---
+Звук:
+--- RECORDSEPARATOR ---
+ звуковая дорожка отсутствует

@@ -1,0 +1,5 @@
+СРТ:
+--- RECORDSEPARATOR ---
+СРЕДНЯЯ СТОИМОСТЬ
+--- RECORDSEPARATOR ---
+1000 КОНТАКТОВ

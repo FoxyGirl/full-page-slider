@@ -1,0 +1,5 @@
+126 000 человек/сутки
+--- RECORDSEPARATOR ---
+3 754 000
+--- RECORDSEPARATOR ---
+ человек/месяц
