@@ -1,0 +1,46 @@
+.ul-clear() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.zero-centered() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.triangle(@_; @size; @color) {
+  width: 0;
+  height: 0;
+  border-width: @size;
+  border-style: solid;
+  border-color: @color;
+}
+
+.triangle(top; @size; @color) {
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-style: none;
+}
+
+.triangle(right; @size; @color) {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-style: none;
+}
+
+.triangle(bottom; @size; @color) {
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-style: none;
+}
+
+.triangle(left; @size; @color) {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-style: none;
+}
