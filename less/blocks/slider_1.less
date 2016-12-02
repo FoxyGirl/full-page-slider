@@ -1,0 +1,46 @@
+.slider__content-1 {
+  float: right;
+  height: 100%;
+  width: 60.625%; /* 582 / 960 */
+  padding: 385px 25px 25px;
+  background-color: @light-color;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 38px;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+  }
+
+  .link__content-1 {
+    position: relative;
+    margin-left: 90px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -27px;
+      width: 22px;
+      height: 22px;
+      background-color: red;
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 155px;
+  left: 50%;
+  margin-left: -315px;
+  padding: 20px 25px;
+  background-color: fade(@light-color, 50%);
+}
