@@ -1,0 +1,49 @@
+.information {
+  //background-color: fade(cyan, 20%);
+}
+
+.information__title {
+  padding-bottom: 5px;
+  .border-common-bottom();
+  text-align: center;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.information-text {
+  text-align: justify;
+  column-count: 2;
+  column-gap: 40px;
+  //background-color: fade(cyan, 20%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media @mobile-middle-width {
+    column-count: 1;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.25;
+    font-size: 1rem;
+    text-indent: 30px;
+/*
+    @media @mobile-middle-width {
+      font-size: 1.3rem;
+    }
+    */
+  }
+}
+
+.mark {
+  font-weight: 600;
+}
+
+.mark__yellow {
+  color: @brand-color2;
+}
+
+.mark__blue {
+  color: @brand-color;
+}
