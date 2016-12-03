@@ -8,9 +8,18 @@ body {
   box-sizing: inherit;
 }
 
+html {
+  font-size: 16px;
+
+  @media @mobile-big-width {
+    font-size: 12px;
+  }
+}
+
 body {
   margin: 0;
   font-family: @font-base;
-  font-size: 16px;
   color: @text-color;
+
+
 }

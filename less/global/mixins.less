@@ -13,6 +13,32 @@
   margin: auto;
 }
 
+.clear-fix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.border-common(@size: @border-common-width; @color: @brand-color2) {
+  border-width: @size;
+  border-style: solid;
+  border-color: @color;
+}
+
+.border-common-top(@size: @border-common-width; @color: @brand-color2) {
+  border-top-width: @size;
+  border-top-style: solid;
+  border-top-color: @color;
+}
+
+.border-common-bottom(@size: @border-common-width; @color: @brand-color2) {
+  border-bottom-width: @size;
+  border-bottom-style: solid;
+  border-bottom-color: @color;
+}
+
 .triangle(@_; @size; @color) {
   width: 0;
   height: 0;
