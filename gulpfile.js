@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp"),
+    less = require("gulp-less"),
     plumber = require("gulp-plumber"),
     postcss = require("gulp-postcss"),
     autoprefixer = require("autoprefixer"),
@@ -10,8 +11,9 @@ var gulp = require("gulp"),
     server = require("browser-sync").create();
 
 gulp.task("style", function() {
-    gulp.src("css/styles.css")
+    gulp.src("less/styles.less")
         .pipe(plumber())
+        .pipe(less())
         .pipe(postcss([
             autoprefixer({browsers: [
                 "last 1 version",
@@ -24,7 +26,7 @@ gulp.task("style", function() {
                 sort: true
             })
         ]))
-        //.pipe(gulp.dest("css/"))
+        .pipe(gulp.dest("css/"))
         .pipe(minify())
         .pipe(rename("styles.min.css"))
         .pipe(gulp.dest("css/"))
@@ -39,7 +41,8 @@ gulp.task("serve", ["style"], function() {
         ui: false
     });
 
-    gulp.watch("css/*.css", ["style"]);
+    //gulp.watch("css/*.css", ["style"]);
+    gulp.watch("less/**/*.less", ["style"]);
     gulp.watch("*.html").on("change", server.reload);
     gulp.watch("js/*.js").on("change", server.reload);
 });
