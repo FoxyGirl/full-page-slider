@@ -118,15 +118,17 @@
   &::before {
     content: "";
     position: absolute;
-    top: -1px;
-    left: -50px;
-    width: 0;
-    height: 0;
-    border-width: 25px;
-    border-style: solid;
-    border-color: @brand-color;
-    border-left-color: transparent;
-    border-top-color: transparent;
+    top: 0px;
+    left: -24px;
+    width: 20px;
+    height: @top-link-height - 2;
+    background: linear-gradient(to top left, @brand-color 50%, transparent 50%, transparent 100%);
+
+    @media @mobile-big-width {
+      left: -19px;
+      width: 20px;
+      height: @top-link-height - 7;
+    }
   }
 }
 
