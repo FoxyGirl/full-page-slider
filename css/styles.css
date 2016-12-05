@@ -208,7 +208,7 @@ body {
   content: "";
   position: absolute;
   top: 0px;
-  left: -24px;
+  left: -25px;
   width: 25px;
   height: 48px;
   background: linear-gradient(to top left, #01408c 50%, transparent 50%, transparent 100%);
@@ -315,7 +315,7 @@ body {
 .slider__content-1 .link__content-1::before {
   content: '';
   position: absolute;
-  top: 6px;
+  top: 2px;
   left: 0px;
   width: 20px;
   height: 17px;
@@ -794,7 +794,7 @@ body {
     line-height: 45px;
   }
   .slider__link::before {
-    left: -19px;
+    left: -20px;
     width: 20px;
     height: 43px;
   }
@@ -803,7 +803,7 @@ body {
     padding-bottom: 55px;
   }
   .slider__content-1 .link__content-1::before {
-    top: 3px;
+    top: 1px;
   }
   .variation-block__image {
     float: none;
