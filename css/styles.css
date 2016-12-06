@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Myriad Pro";
-  src: local("Myriad Pro"), url("../fonts/MyriadPro-Regular_0.otf") format("otf");
+  src: local("Myriad Pro"), url("../fonts/MyriadPro-Regular_0.otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Myriad Pro";
-  src: local("Myriad Pro"), url("../fonts/MyriadPro-Semibold.otf") format("otf");
+  src: local("Myriad Pro"), url("../fonts/MyriadPro-Semibold.otf");
   font-weight: 600;
   font-style: normal;
 }
@@ -730,6 +730,17 @@ body {
   width: 32%;
   height: 78%;
   overflow: hidden;
+}
+.poster__attention::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 7%;
+  background: radial-gradient(rgba(0, 0, 0, 0.11) 0%, transparent 100%);
+  border-radius: 50%;
 }
 .variation-block__image--animate .poster-detail__block {
   animation: move-poster-block 10s infinite ease-in-out;
