@@ -48,14 +48,19 @@
     &:hover {
       color: @brand-color;
 
+      svg {
+        fill: @brand-color
+      }
+/*
       &::before {
         background: linear-gradient(61deg, @light-color 33%, transparent 33%, transparent 50%),
         linear-gradient(-61deg, @light-color 33%, transparent 33%, transparent 50%),
         @brand-color;
         background-repeat: no-repeat;
       }
+      */
     }
-
+/*
     &::before {
       content: '';
       position: absolute;
@@ -70,6 +75,18 @@
 
       @media @mobile-big-width {
         top: 1px;
+      }
+    }
+*/
+    svg {
+      position: absolute;
+      left: -7px;
+      top: -13px;
+      fill: @brand-color2;
+
+      @media @mobile-big-width {
+        left: -7px;
+        top: -13px;
       }
     }
   }

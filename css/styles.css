@@ -304,23 +304,44 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   color: #656565;
+  /*
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0px;
+      width: 20px;
+      height: 17px;
+      background: linear-gradient(61deg, @light-color 33%, transparent 33%, transparent 50%),
+                  linear-gradient(-61deg, @light-color 33%, transparent 33%, transparent 50%),
+                  @brand-color2;
+      background-repeat: no-repeat;
+
+      @media @mobile-big-width {
+        top: 1px;
+      }
+    }
+*/
 }
 .slider__content-1 .link__content-1:hover {
   color: #01408c;
+  /*
+      &::before {
+        background: linear-gradient(61deg, @light-color 33%, transparent 33%, transparent 50%),
+        linear-gradient(-61deg, @light-color 33%, transparent 33%, transparent 50%),
+        @brand-color;
+        background-repeat: no-repeat;
+      }
+      */
 }
-.slider__content-1 .link__content-1:hover::before {
-  background: linear-gradient(61deg, #ffffff 33%, transparent 33%, transparent 50%), linear-gradient(-61deg, #ffffff 33%, transparent 33%, transparent 50%), #01408c;
-  background-repeat: no-repeat;
+.slider__content-1 .link__content-1:hover svg {
+  fill: #01408c;
 }
-.slider__content-1 .link__content-1::before {
-  content: '';
+.slider__content-1 .link__content-1 svg {
   position: absolute;
-  top: 2px;
-  left: 0px;
-  width: 20px;
-  height: 17px;
-  background: linear-gradient(61deg, #ffffff 33%, transparent 33%, transparent 50%), linear-gradient(-61deg, #ffffff 33%, transparent 33%, transparent 50%), #fbad2f;
-  background-repeat: no-repeat;
+  left: -7px;
+  top: -13px;
+  fill: #fbad2f;
 }
 .slider__content-2 {
   padding: 108px 25px 15px;
@@ -768,11 +789,21 @@ body {
   height: 50px;
   right: 30px;
   bottom: 30px;
-  background-color: yellow;
-  opacity: 0.4;
+  font-size: 0;
+  border: 2px solid #01408c;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  opacity: 0.2;
+  transform: rotate(180deg);
 }
 .comeback:hover {
   opacity: 1;
+}
+.comeback svg {
+  position: absolute;
+  left: -5px;
+  top: -8px;
+  fill: #01408c;
 }
 @media only screen and (min-width: 960px) {
   .slider {
@@ -826,8 +857,9 @@ body {
     padding-top: 360px;
     padding-bottom: 55px;
   }
-  .slider__content-1 .link__content-1::before {
-    top: 1px;
+  .slider__content-1 .link__content-1 svg {
+    left: -7px;
+    top: -13px;
   }
   .top-title {
     right: 120px;

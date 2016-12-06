@@ -5,11 +5,22 @@
   height: 50px;
   right: 30px;
   bottom: 30px;
-  background-color: yellow;
-  opacity: 0.4;
+  font-size: 0;
+  border: 2px solid @brand-color;
+  background-color: fade(@light-color, 30%);
+  border-radius: 50%;
+  opacity: 0.2;
+  transform: rotate(180deg);
 
   &:hover {
     opacity: 1;
+  }
+
+  svg {
+    position: absolute;
+    left: -5px;
+    top: -8px;
+    fill: @brand-color;
   }
 
   @media @mobile-middle-width {

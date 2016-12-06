@@ -11,12 +11,22 @@
         </script>
     </head>
     <body>
+        <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="triangle" viewBox="0 0 500 400">
+                <path d="M 100 100 L 300 100 L 200 300 z"/>
+            </symbol>
+        </svg>
         <ul class="slider">
             <!-- Slide 1 -->
             <li class="slider__item  slider__item--1">
                 <div class="slider__content-1">
                     <h1>ЦИФРОВЫЕ ПОСТЕРЫ <span>В МИНСКОМ МЕТРОПОЛИТЕНЕ</span> </h1>
-                    <a class="link__content-1" href="#slider2" id="link_1">Продолжить</a>
+                    <a class="link__content-1" href="#slider2" id="link_1">
+                        <svg width="45" height="45">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#triangle"></use>
+                        </svg>
+                        Продолжить
+                    </a>
                 </div>
                 <div class="logo  logo--main">
                     <img src="img/visage_outdoor_logo_b.png" alt="VISAGEOUTDOOR логотип" width="598" height="162">
@@ -317,7 +327,12 @@
             </li>
             <!-- end of Slide 5 -->
         </ul>
-        <a href="#advertising" class="comeback" id="comeback">Назад</a>
+        <a href="#advertising" class="comeback" id="comeback">
+            <svg width="70" height="70">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#triangle"></use>
+            </svg>
+            Назад
+        </a>
 
         <script src="js/slider_script.js"></script>
         <script src="js/scroll_to_anchor.js"></script>
