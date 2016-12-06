@@ -761,6 +761,19 @@ body {
   opacity: 0;
   animation: fade-attention 10s infinite ease-in-out;
 }
+.comeback {
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 30px;
+  bottom: 30px;
+  background-color: yellow;
+  opacity: 0.4;
+}
+.comeback:hover {
+  opacity: 1;
+}
 @media only screen and (min-width: 960px) {
   .slider {
     position: relative;
@@ -815,6 +828,9 @@ body {
   }
   .slider__content-1 .link__content-1::before {
     top: 1px;
+  }
+  .top-title {
+    right: 120px;
   }
   .variation-block__image {
     float: none;
@@ -871,6 +887,9 @@ body {
   .slider__content-5 {
     padding-left: 25px;
     padding-right: 25px;
+  }
+  .comeback {
+    display: block;
   }
 }
 @media only screen and (max-width: 420px) {

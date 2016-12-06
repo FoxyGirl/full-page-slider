@@ -1,4 +1,5 @@
 ;(function () {
+    'use strict';
     var link_0 = document.getElementById('link_0'),
         link_1 = document.getElementById('link_1'),
         link_3 = document.getElementById('link_3'),
