@@ -34,6 +34,7 @@
     position: relative;
     margin-left: 90px;
     margin-bottom: 220px;
+    padding-left: 25px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -41,20 +42,52 @@
     color: @text-color;
 
     @media @mobile-middle-width {
-      margin-left: 30px;
+      margin-left: 0px;
     }
     
     &:hover {
       color: @brand-color;
-    }
 
+      svg {
+        fill: @brand-color
+      }
+/*
+      &::before {
+        background: linear-gradient(61deg, @light-color 33%, transparent 33%, transparent 50%),
+        linear-gradient(-61deg, @light-color 33%, transparent 33%, transparent 50%),
+        @brand-color;
+        background-repeat: no-repeat;
+      }
+      */
+    }
+/*
     &::before {
       content: '';
       position: absolute;
-      left: -27px;
-      width: 22px;
-      height: 22px;
-      background-color: red;
+      top: 2px;
+      left: 0px;
+      width: 20px;
+      height: 17px;
+      background: linear-gradient(61deg, @light-color 33%, transparent 33%, transparent 50%),
+                  linear-gradient(-61deg, @light-color 33%, transparent 33%, transparent 50%),
+                  @brand-color2;
+      background-repeat: no-repeat;
+
+      @media @mobile-big-width {
+        top: 1px;
+      }
+    }
+*/
+    svg {
+      position: absolute;
+      left: -7px;
+      top: -13px;
+      fill: @brand-color2;
+
+      @media @mobile-big-width {
+        left: -7px;
+        top: -13px;
+      }
     }
   }
 }

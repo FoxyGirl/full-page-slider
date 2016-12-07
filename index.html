@@ -11,12 +11,22 @@
         </script>
     </head>
     <body>
+        <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="triangle" viewBox="0 0 500 400">
+                <path d="M 100 100 L 300 100 L 200 300 z"/>
+            </symbol>
+        </svg>
         <ul class="slider">
             <!-- Slide 1 -->
             <li class="slider__item  slider__item--1">
                 <div class="slider__content-1">
                     <h1>ЦИФРОВЫЕ ПОСТЕРЫ <span>В МИНСКОМ МЕТРОПОЛИТЕНЕ</span> </h1>
-                    <a class="link__content-1" href="#slider2" id="link_1">Продолжить</a>
+                    <a class="link__content-1" href="#slider2" id="link_1">
+                        <svg width="45" height="45">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#triangle"></use>
+                        </svg>
+                        Продолжить
+                    </a>
                 </div>
                 <div class="logo  logo--main">
                     <img src="img/visage_outdoor_logo_b.png" alt="VISAGEOUTDOOR логотип" width="598" height="162">
@@ -34,7 +44,7 @@
                         <div class="advertising__text">
                             <div class="advertising__title">Рекламные ЦИФРОВЫЕ ПОСТЕРЫ</div>
                             <div class="advertising__subtitle">Переход между ст.м.&nbsp;Купаловская и ст.м.&nbsp;Октябрьская</div>
-                            <div class="advertising__details">
+                            <div class="advertising__details" id="advertising">
                                 <div class="advertising__detail">
                                     <div class="detail__img">
                                         <img src="img/screen-icon.png" alt="Количество">
@@ -178,7 +188,7 @@
                 <a class="logo" href="#">
                     <img src="img/visage_outdoor_logo_b.png" alt="VISAGEOUTDOOR логотип" width="185" height="50">
                 </a>
-                <a class="slider__link  slider__link--5" href="#slider2" id="link_5">Назад</a>
+                <a class="slider__link  slider__link--5" href="#advertising" id="link_5">Назад</a>
             </li>
             <!-- end of Slide 3 -->
             <!-- Slide 4 -->
@@ -230,7 +240,7 @@
                 <a class="logo" href="#">
                     <img src="img/visage_outdoor_logo_b.png" alt="VISAGEOUTDOOR логотип" width="185" height="50">
                 </a>
-                <a class="slider__link  slider__link--6" href="#slider2" id="link_6">Назад</a>
+                <a class="slider__link  slider__link--6" href="#advertising" id="link_6">Назад</a>
             </li>
             <!-- end of Slide 4 -->
             <!-- Slide 5 -->
@@ -246,7 +256,9 @@
                                 <img class="poster-detail  poster-detail__bottom" src="img/poster-bottom.png" alt="">
                                 <div class="poster__attention">
                                     <img class="poster-detail  poster-detail__lamp" src="img/poster-lamp.png" alt="">
+                                    <!--
                                     <img class="poster-detail  poster-detail__lamp-shadow" src="img/poster-lamp-shadow.png" alt="">
+                                     -->
                                 </div>
                                 <img class="poster-detail  poster-detail__block" src="img/poster-block.png" alt="">
                                 <img class="poster-detail  poster-detail__text-1" src="img/poster-text-1.png" alt="">
@@ -276,7 +288,9 @@
                                 <img class="poster-detail  poster-detail__bottom" src="img/poster-bottom.png" alt="">
                                 <div class="poster__attention">
                                     <img class="poster-detail  poster-detail__lamp" src="img/poster-lamp.png" alt="">
+                                    <!--
                                     <img class="poster-detail  poster-detail__lamp-shadow" src="img/poster-lamp-shadow.png" alt="">
+                                    -->
                                 </div>
                                 <img class="poster-detail  poster-detail__block" src="img/poster-block.png" alt="">
                                 <img class="poster-detail  poster-detail__text-1" src="img/poster-text-1.png" alt="">
@@ -309,11 +323,18 @@
                 <a class="logo" href="#">
                     <img src="img/visage_outdoor_logo_b.png" alt="VISAGEOUTDOOR логотип" width="185" height="50">
                 </a>
-                <a class="slider__link  slider__link--7" href="#slider2" id="link_7">Назад</a>
+                <a class="slider__link  slider__link--7" href="#advertising" id="link_7">Назад</a>
             </li>
             <!-- end of Slide 5 -->
         </ul>
+        <a href="#advertising" class="comeback" id="comeback">
+            <svg width="70" height="70">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#triangle"></use>
+            </svg>
+            Назад
+        </a>
 
         <script src="js/slider_script.js"></script>
+        <script src="js/scroll_to_anchor.js"></script>
     </body>
 </html>
